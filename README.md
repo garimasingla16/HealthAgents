@@ -12,10 +12,6 @@
 - [Agents](#agents)
   - [Main Agents](#main-agents)
   - [Validator Agents](#validator-agents)
-- [Logging](#logging)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -97,10 +93,6 @@ The **Multi-Agents AI System from Scratch** is a Python-based application levera
    - **Refiner Agent:** Enhances drafts for better quality.
    - **Sanitize Validator Agent:** Ensures all PHI has been removed.
 
-6. **Logger**
-   - Records all interactions, inputs, outputs, and errors.
-   - Facilitates monitoring and debugging.
-
 ## Installation
 
 ### Prerequisites
@@ -114,7 +106,7 @@ The **Multi-Agents AI System from Scratch** is a Python-based application levera
 
    ```bash
    git clone https://github.com/AIAnytime/Multi-Agents-System-from-Scratch.git
-   cd Multi-Agents-System-from-Scratch
+   cd MultiAgents
    ```
 
 2. **Create a Virtual Environment**
@@ -206,45 +198,3 @@ The **Multi-Agents AI System from Scratch** is a Python-based application levera
   - **Function:** Ensures that all PHI has been removed from sanitized data.
   - **Usage:** Receives original and sanitized data to verify PHI removal.
 
-## Logging
-
-- **Location:** Logs are stored in the `logs/` directory.
-- **Files:**
-  - `multi_agent_system.log`: Contains detailed logs for monitoring and debugging.
-- **Configuration:** Logging is handled using the `loguru` library, configured in `utils/logger.py`.
-
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. **Fork the Repository**
-2. **Create a Feature Branch**
-
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-
-3. **Commit Your Changes**
-
-   ```bash
-   git commit -m "Add your feature"
-   ```
-
-4. **Push to the Branch**
-
-   ```bash
-   git push origin feature/YourFeature
-   ```
-
-5. **Open a Pull Request**
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- [OpenAI](https://openai.com/) for providing the GPT-4 model.
-- [Streamlit](https://streamlit.io/) for the web application framework.
-- [Loguru](https://github.com/Delgan/loguru) for the logging library.
-- Inspired by collaborative multi-agent system architectures and prompt engineering techniques like Chain-of-Thought (CoT) and ReAct.
